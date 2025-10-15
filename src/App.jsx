@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Home from "./components/Home.jsx";
 import About from "./components/About";
 import PortFolio from "./components/PortFolio";
 import Skills from "./components/Skills";

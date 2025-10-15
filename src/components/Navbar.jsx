@@ -51,21 +51,46 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {menu && (
-        <ul className="md:hidden flex flex-col items-center justify-center space-y-3 text-xl mt-4">
-          {navItems.map((item) => (
-            <li key={item.id} className="hover:scale-105 duration-200 cursor-pointer font-semibold">
-              <Link
-                to={item.link}
-                onClick={() => setMenu(false)}
-                className="hover:text-emerald-400 transition duration-200"
-              >
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+{menu && (
+  <ul
+    className="
+      md:hidden
+      fixed top-16 left-15 right-4
+      bg-[#2d2d2f] 
+      py-6 px-8
+      flex flex-col items-center
+      space-y-4
+      shadow-xl
+      rounded-b-lg
+      text-gray-100
+      z-50
+      transform
+      transition-transform
+      duration-300
+      ease-out
+      animate-slideDown
+      w-32
+    "
+    
+  >
+    {navItems.map((item) => (
+      <li
+        key={item.id}
+        className="hover:scale-205 text-[12px] text-green-400 duration-200 cursor-pointer font-semibold w-full text-center"
+      >
+        <Link
+          to={item.link}
+          onClick={() => setMenu(false)}
+          className="hover:text-emerald-400 transition duration-200"
+        >
+          {item.text}
+        </Link>
+      </li>
+    ))}
+  </ul>
+)}
+
+
     </div>
   );
 }
