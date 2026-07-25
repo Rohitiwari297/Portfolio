@@ -1,129 +1,151 @@
 import React, { useEffect, useState } from "react";
+import { FaGraduationCap, FaBriefcase, FaAward, FaUserCheck, FaGithub, FaDownload } from "react-icons/fa";
 
 function About() {
   const [githubData, setGithubData] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/rohitiwari297")
+    fetch("https://api.github.com/users/Rohitiwari297")
       .then((res) => res.json())
       .then((data) => setGithubData(data))
       .catch((err) => console.error("GitHub fetch error:", err));
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-[#0b0b0d] via-[#101214] to-[#1a1c1e] text-gray-200 min-h-screen py-16 px-4 md:px-16">
-      <div className="max-w-5xl mx-auto space-y-10 md:space-y-12">
+    <section className="bg-gradient-to-b from-[#0b0b0d] via-[#101318] to-[#14171d] text-gray-200 min-h-screen py-20 px-4 md:px-16">
+      <div className="max-w-5xl mx-auto space-y-12">
         
         {/* Header */}
-        <div className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-400 mb-3 sm:mb-4 tracking-tight">
+        <div className="text-center space-y-3">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-emerald-400 tracking-tight">
             About Me
           </h1>
-          <p className="text-sm sm:text-base md:text-gray-400 max-w-2xl mx-auto">
-            I’m a passionate Full Stack Developer focused on crafting smooth, modern, and scalable web experiences.
+          <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
+            Full Stack Developer specialized in building robust web applications, high-performance backends with Redis & Nginx, and responsive React frontend systems.
           </p>
         </div>
 
-        {/* Content */}
-        <div className="grid gap-6 sm:gap-8 md:gap-12">
+        {/* Content Sections Grid */}
+        <div className="space-y-8">
           
-          {/* Intro */}
-          <div className="bg-[#16181a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-emerald-600/20 transition">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-400 mb-2 sm:mb-3">
-              Who I Am
-            </h2>
+          {/* Who I Am */}
+          <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg hover:border-emerald-500/40 transition">
+            <div className="flex items-center space-x-3 text-emerald-400 mb-4">
+              <FaUserCheck className="text-2xl" />
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Engineering Profile</h2>
+            </div>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Hello, I’m <span className="text-emerald-300 font-semibold">Rohit Kumar Tiwari</span>, a creative and goal-driven Full Stack Developer specializing in the{" "}
-              <span className="text-emerald-400 font-medium">MERN stack</span>. I have a passion for designing and developing responsive, user-friendly, and visually appealing web applications.
-              My approach combines clean code, modern UI design, and robust backend systems.
+              Hello, I’m <span className="text-emerald-300 font-bold">Rohit Kumar Tiwari</span>, a solution-driven Full Stack Developer with 1+ years of experience. I specialize in crafting full-stack web applications using <span className="text-emerald-400 font-medium">React.js, Node.js, Express.js, TypeScript, Redis, Nginx, and MongoDB</span>. My engineering approach emphasizes clean architecture, API optimization, caching strategies, and reliable production deployments on Linux VPS and cPanel servers.
             </p>
           </div>
 
-          {/* Education */}
-          <div className="bg-[#16181a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-emerald-600/20 transition">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-400 mb-2 sm:mb-3">
-              Education & Training
-            </h2>
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              🎓 <span className="font-medium text-emerald-300">M.Sc. in Computer Science</span> — Veer Bahadur Singh Purvanchal University (2023)
-              <br />
-              💻 <span className="font-medium text-emerald-300">Full Stack Development Certification</span> — Physics Wallah
-              <br />
-              I gained strong foundations in Data Structures, Algorithms, Databases, React, Node.js, and API Development — enabling me to build end-to-end solutions.
-            </p>
-          </div>
+          {/* Professional Experience */}
+          <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg hover:border-emerald-500/40 transition space-y-6">
+            <div className="flex items-center space-x-3 text-emerald-400">
+              <FaBriefcase className="text-2xl" />
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Work Experience</h2>
+            </div>
 
-          {/* Skills */}
-          <div className="bg-[#16181a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-emerald-600/20 transition">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-400 mb-2 sm:mb-3">
-              Skills & Expertise
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 text-sm sm:text-base text-gray-300">
-              <ul className="space-y-1 sm:space-y-2">
-                <li>🚀 JavaScript, Python, SQL</li>
-                <li>⚛️ React.js, Next.js, Tailwind CSS</li>
-                <li>🌐 Node.js, Express.js, MongoDB</li>
+            {/* Experience 1 */}
+            <div className="border-l-2 border-emerald-500/60 pl-4 space-y-2">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                <h3 className="text-lg font-bold text-gray-100">Junior Full Stack Developer</h3>
+                <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/30 w-fit">
+                  Apr 2025 – Present
+                </span>
+              </div>
+              <p className="text-xs text-gray-400 font-mono">RSS Infotech Pvt. Ltd.</p>
+              <ul className="text-xs sm:text-sm text-gray-300 space-y-1.5 list-disc list-inside pt-1">
+                <li>Engineered scalable admin panels for video-streaming platform (Simhasth TV / Uff-TV) with real-time video analytics and media alert push notifications.</li>
+                <li>Architected complete backend for matrimonial platform (Shyam Aura) with JWT auth, rate-limiting, subscription tiers, and Redis caching.</li>
+                <li>Implemented Redis caching & Nginx reverse proxy architecture, cutting API response times by 40%.</li>
+                <li>Managed microservices and deployments on Linux VPS servers and cPanel environments with 99.9% uptime.</li>
               </ul>
-              <ul className="space-y-1 sm:space-y-2">
-                <li>🧩 RESTful APIs, JWT Auth, Firebase</li>
-                <li>🧰 Git, Docker, Postman</li>
-                <li>🧠 Clean Code & Scalable Architecture</li>
+            </div>
+
+            {/* Experience 2 */}
+            <div className="border-l-2 border-teal-500/60 pl-4 space-y-2 pt-2">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                <h3 className="text-lg font-bold text-gray-100">React.js Developer Intern</h3>
+                <span className="text-xs font-mono text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded border border-teal-500/30 w-fit">
+                  Oct 2024 – Mar 2025
+                </span>
+              </div>
+              <p className="text-xs text-gray-400 font-mono">Drishtee Development & Communication Ltd.</p>
+              <ul className="text-xs sm:text-sm text-gray-300 space-y-1.5 list-disc list-inside pt-1">
+                <li>Contributed to Drishtee Kiosk Portal, optimizing document verification for CSP employees.</li>
+                <li>Developed responsive frontend components using React.js, JavaScript (ES6+), and CSS3.</li>
               </ul>
             </div>
           </div>
 
-          {/* Experience */}
-          <div className="bg-[#16181a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-emerald-600/20 transition">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-400 mb-2 sm:mb-3">
-              Professional Experience
-            </h2>
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              <strong className="text-emerald-300">Front-End Intern</strong> — Drishtee Development and Communication Ltd.
-              <br />
-              Contributed to the <span className="text-emerald-400 font-medium">Drishtee Kiosk Portal</span>, enhancing user experience for CSPs and admins. Built responsive UI components using React.js, integrated backend APIs, and improved document verification flows. Focused on performance optimization, accessibility, and clean UI/UX design.
-            </p>
+          {/* Education & Certifications */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Education */}
+            <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 shadow-lg space-y-3">
+              <div className="flex items-center space-x-3 text-emerald-400">
+                <FaGraduationCap className="text-2xl" />
+                <h2 className="text-lg font-bold text-gray-100">Education</h2>
+              </div>
+              <h3 className="text-base font-bold text-gray-200">Master of Computer Science (CS)</h3>
+              <p className="text-xs text-gray-400 font-mono">Veer Bahadur Singh Purvanchal University, UP (2023)</p>
+              <p className="text-xs text-gray-300">Specialized in Full-Stack Web Development, Data Structures, Software Engineering, and Database Architecture.</p>
+            </div>
+
+            {/* Certifications */}
+            <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 shadow-lg space-y-3">
+              <div className="flex items-center space-x-3 text-emerald-400">
+                <FaAward className="text-2xl" />
+                <h2 className="text-lg font-bold text-gray-100">Certifications</h2>
+              </div>
+              <ul className="text-xs sm:text-sm text-gray-300 space-y-2 font-medium">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Full-Stack Web Development Bootcamp – Physics Wallah</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span>JavaScript Essentials – Physics Wallah</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span>React.js Basics – Physics Wallah</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          {/* Mission */}
-          <div className="bg-[#16181a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-emerald-600/20 transition">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-400 mb-2 sm:mb-3">
-              Mission Statement
-            </h2>
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              My mission is to build meaningful, elegant web solutions that empower people and businesses.  
-              I believe in continuous learning, innovation, and using technology as a force for good — one project at a time.
-            </p>
-          </div>
-
-          {/* GitHub Card */}
+          {/* GitHub Live Card */}
           {githubData && (
-            <div className="bg-gradient-to-r from-[#1a1d20] to-[#141618] rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg border border-emerald-700/30">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-400 mb-4 sm:mb-5">
-                GitHub Profile
-              </h2>
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+            <div className="bg-gradient-to-r from-[#141720] via-[#1a1e29] to-[#141720] border border-emerald-500/30 rounded-2xl p-6 sm:p-8 shadow-xl">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-xl font-bold text-emerald-400 flex items-center space-x-2">
+                  <FaGithub />
+                  <span>GitHub Profile Activity</span>
+                </h2>
+                <a
+                  href="/Rohit_Kumar_Tiwari_Resume.pdf"
+                  download="Rohit_Kumar_Tiwari_Resume.pdf"
+                  className="inline-flex items-center space-x-2 px-3 py-1.5 bg-emerald-500 text-gray-950 font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-emerald-400 transition"
+                >
+                  <FaDownload />
+                  <span>Download Resume</span>
+                </a>
+              </div>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
                 <img
                   src={githubData.avatar_url}
                   alt="GitHub Avatar"
-                  className="w-20 h-20 sm:w-28 sm:h-28 rounded-full border-2 border-emerald-400 shadow-md"
+                  className="w-24 h-24 rounded-full border-2 border-emerald-400 shadow-md"
                 />
-                <div>
-                  <h3 className="text-base sm:text-xl font-semibold">{githubData.name}</h3>
-                  <p className="text-sm sm:text-gray-400 mb-1">@{githubData.login}</p>
-                  <p className="text-sm sm:text-gray-300 mb-2">{githubData.bio}</p>
-                  <div className="flex flex-wrap gap-4 text-gray-400 text-xs sm:text-sm">
-                    <span>Repos: {githubData.public_repos}</span>
-                    <span>Followers: {githubData.followers}</span>
-                    <span>Following: {githubData.following}</span>
+                <div className="space-y-2 text-center sm:text-left">
+                  <h3 className="text-lg font-bold text-gray-100">{githubData.name} (@{githubData.login})</h3>
+                  <p className="text-xs sm:text-sm text-gray-300">{githubData.bio || "Full Stack Web Developer & Software Engineer"}</p>
+                  <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-xs font-mono text-gray-400 pt-1">
+                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Public Repos: <strong className="text-emerald-400">{githubData.public_repos}</strong></span>
+                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Followers: <strong className="text-emerald-400">{githubData.followers}</strong></span>
+                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Following: <strong className="text-emerald-400">{githubData.following}</strong></span>
                   </div>
-                  <a
-                    href={githubData.html_url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block mt-3 px-4 py-1 sm:px-5 sm:py-2 bg-emerald-500 text-gray-900 font-medium rounded-lg hover:bg-emerald-400 transition-transform transform hover:scale-105 text-sm sm:text-base"
-                  >
-                    Visit GitHub
-                  </a>
                 </div>
               </div>
             </div>
