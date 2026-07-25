@@ -311,7 +311,7 @@ def generate_pdf(filename):
 
     # Project 6: Freedom Voyages
     story.append(Paragraph("<b>Project: Freedom Voyages – Tour & Travel Platform</b>", project_title_style))
-    story.append(Paragraph("<b>GitHub:</b> <a href='https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-' color='#0284C7'>BACKEND_FREEDOM_VOYAGES</a>", meta_style))
+    story.append(Paragraph("<b>Live:</b> <a href='https://freedomvoyages.com/' color='#0284C7'>https://freedomvoyages.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-' color='#0284C7'>BACKEND_FREEDOM_VOYAGES</a>", meta_style))
     story.append(Paragraph("<b>Tech Stack:</b> Node.js, Express.js, MongoDB, REST APIs", meta_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle7', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     freedom_roles = [

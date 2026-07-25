@@ -29,6 +29,7 @@ function PortFolio() {
       subtitle: "Curated Travel Package & Booking Backend",
       description: "Comprehensive travel service platform powering tour packages, instant booking workflows, user trip management, and secure REST APIs.",
       tech: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+      liveUrl: "https://freedomvoyages.com/",
       githubUrl: "https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-",
       featured: true
     },
