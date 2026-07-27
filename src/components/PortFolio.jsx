@@ -7,7 +7,7 @@ function PortFolio() {
     {
       id: 1,
       title: "TaazaIt – Multi-Vendor Grocery Platform",
-      subtitle: "Full-Stack Grocery E-Commerce Engine",
+      subtitle: "Full-Stack Grocery E-Commerce Engine (Frontend & Backend)",
       description: "Scalable multi-vendor grocery application featuring customer/vendor/admin role-based authorization, OTP auth, HTTP-only JWT cookies, Redis rate-limiting, and Nginx load balancing.",
       tech: ["React.js", "Node.js", "Express", "Redis", "Nginx", "MongoDB"],
       liveUrl: "https://taazait.com/",
@@ -25,31 +25,32 @@ function PortFolio() {
     },
     {
       id: 3,
-      title: "Freedom Voyages – Tour & Travel Booking",
-      subtitle: "Curated Travel Package & Booking Backend",
-      description: "Comprehensive travel service platform powering tour packages, instant booking workflows, user trip management, and secure REST APIs.",
-      tech: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+      title: "Freedom Voyages – Tour & Travel Platform",
+      subtitle: "Complete Backend & Admin Panel Frontend",
+      description: "Comprehensive travel service platform powering tour packages, instant booking workflows, user trip management, admin panel management, and secure REST APIs.",
+      tech: ["Node.js", "Express.js", "React.js", "MongoDB", "REST APIs"],
       liveUrl: "https://freedomvoyages.com/",
       githubUrl: "https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-",
       featured: true
     },
     {
       id: 4,
-      title: "Shyam Aura – Matrimonial Platform Backend",
-      subtitle: "High-Concurrency Backend & Admin Analytics",
-      description: "Matrimonial system backend featuring user profile matching algorithms, search filters, chat APIs, JWT auth, rate limiting, and real-time subscription admin dashboard.",
-      tech: ["TypeScript", "Node.js", "Express", "Redis", "cPanel/VPS"],
-      liveUrl: "https://aura.suryapolypack.com/",
-      githubUrl: "https://github.com/Rohitiwari297/Backend---Aura-Matrimonial-App-",
-      featured: true
-    },
-    {
-      id: 5,
       title: "Simhasth TV (Uff-TV) Admin Panel",
       subtitle: "Video Streaming Content Moderation Portal",
       description: "Admin panel for large video-streaming platform featuring top-viewed video analytics, media push alert notifications, and role-based content moderation.",
       tech: ["React.js", "Bootstrap", "Node.js", "cPanel"],
       liveUrl: "https://rssindia.in.net/uff-tv/",
+      githubUrl: "https://github.com/Rohitiwari297",
+      featured: true
+    },
+    {
+      id: 5,
+      title: "Shyam Aura – Matrimonial Platform Backend & Admin",
+      subtitle: "High-Concurrency Backend & Admin Analytics",
+      description: "Matrimonial system backend featuring user profile matching algorithms, search filters, chat APIs, JWT auth, rate limiting, and real-time subscription admin dashboard.",
+      tech: ["TypeScript", "Node.js", "Express", "Redis", "cPanel/VPS"],
+      liveUrl: "https://aura.suryapolypack.com/",
+      githubUrl: "https://github.com/Rohitiwari297/Backend---Aura-Matrimonial-App-",
       featured: false
     },
     {

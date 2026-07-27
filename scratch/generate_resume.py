@@ -233,74 +233,28 @@ def generate_pdf(filename):
     story.append(Paragraph("<b>2. Company: RSS Infotech Pvt. Ltd.</b> (Apr 2025 – Present)", company_heading))
     story.append(Paragraph("Junior Full Stack Developer", job_title_style))
 
-    # Project 1: Simhasth TV
-    story.append(Paragraph("<b>Project: Simhasth TV (Uff-TV) – Admin Panel</b>", project_title_style))
-    story.append(Paragraph("<b>Hosted on:</b> cPanel Server", meta_style))
-    story.append(Paragraph("<b>Link:</b> <a href='https://rssindia.in.net/uff-tv/' color='#0284C7'>https://rssindia.in.net/uff-tv/</a>", meta_style))
-    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle2', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
-    simhasth_roles = [
-        "Developed and maintained a scalable Admin Panel for a large video-streaming platform, enabling <b>content management, notification control, streaming moderation, and dashboard analytics</b>.",
-        "Built insightful dashboards displaying <b>top-viewed videos, top-liked videos, and real-time engagement metrics</b>.",
-        "Improved backend API performance and ensured secure role-based access control.",
-        "Allowing admins to send alerts (Notification) with images or video thumbnails.",
-        "Created a responsive and user-friendly UI using React.js and Bootstrap Icons.",
-        "Delivered smooth deployment & hosting using <b>cPanel</b> with optimized build processes."
-    ]
-    for r in simhasth_roles:
-        story.append(Paragraph(f"• {r}", bullet_style))
-    story.append(Spacer(1, 4))
-
-    # Project 2: Shyam Aura Backend
-    story.append(Paragraph("<b>Project: Shyam Aura – Matrimonial Application (Complete Backend)</b>", project_title_style))
-    story.append(Paragraph("<b>Hosted on:</b> VPS Node.js Server", meta_style))
-    story.append(Paragraph("<b>Link:</b> <a href='https://aura.suryapolypack.com/' color='#0284C7'>https://aura.suryapolypack.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/Backend---Aura-Matrimonial-App-' color='#0284C7'>GitHub Repo</a>", meta_style))
-    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle3', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
-    aura_backend_roles = [
-        "Architected and implemented the <b>entire backend</b> of a matrimonial platform similar to Jeevansathi.",
-        "Built APIs for <b>user onboarding, profile matching, search filters, chat, preferences, subscription plans, and payments</b>.",
-        "Ensured security with JWT auth, rate-limiting, Redis caching, and modular service-layer architecture for scalability.",
-        "Deployed and maintained the application on a VPS Node.js server, ensuring high uptime and stable performance."
-    ]
-    for r in aura_backend_roles:
-        story.append(Paragraph(f"• {r}", bullet_style))
-    story.append(Spacer(1, 4))
-
-    # Project 3: Shyam Aura Admin Panel
-    story.append(Paragraph("<b>Project: Shyam Aura – Admin Panel</b>", project_title_style))
-    story.append(Paragraph("<b>Hosted on:</b> cPanel Server", meta_style))
-    story.append(Paragraph("<b>Link:</b> <a href='https://rssindia.in.net/shyam-aura/' color='#0284C7'>https://rssindia.in.net/shyam-aura/</a>", meta_style))
-    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle4', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
-    aura_admin_roles = [
-        "Created a full-featured admin panel with <b>real-time analytics, user lifecycle tracking, and subscription-based segmentation</b>.",
-        "Implemented CRUD operations for <b>subscription plans</b>, user activation/deactivation, and special admin privileges.",
-        "Improved operational efficiency by enabling admins to manage users and plans with a clean, interactive UI."
-    ]
-    for r in aura_admin_roles:
-        story.append(Paragraph(f"• {r}", bullet_style))
-    story.append(Spacer(1, 4))
-
-    # Project 4: TaazaIt
-    story.append(Paragraph("<b>Multi-Vendor Grocery Platform – TaazaIt (Backend & User Web App)</b>", project_title_style))
+    # Project 1: TaazaIt (Frontend & Backend)
+    story.append(Paragraph("<b>1. Multi-Vendor Grocery Platform – TaazaIt (Frontend & Backend)</b>", project_title_style))
     story.append(Paragraph("<b>Live:</b> <a href='https://taazait.com/' color='#0284C7'>https://taazait.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/backend-node-grocery-api' color='#0284C7'>backend-node-grocery-api</a>", meta_style))
     story.append(Paragraph("<b>Tech Stack:</b> React.js, Node.js, Express.js, MongoDB, Redis, Nginx, REST APIs", meta_style))
-    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle5', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
+    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle1', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     taazait_roles = [
         "Developing a multi-vendor grocery e-commerce platform enabling multiple sellers to list and manage products while customers can browse, add to cart, and place orders.",
-        "Built secure user authentication and role-based access for customers, vendors, and administrators.",
+        "Built secure user authentication (OTP, JWT cookies) and role-based access for customers, vendors, and administrators.",
         "Implemented product management system allowing vendors to add, update, and manage inventory in real time.",
         "Developed shopping cart and order management functionality with dynamic price calculations, Redis rate limiting, and Nginx load balancing.",
-        "Integrated responsive UI to ensure smooth experience across mobile and desktop devices.",
+        "Integrated responsive React.js UI to ensure smooth user experience across mobile and desktop devices.",
         "Designed RESTful APIs for efficient communication between frontend and backend."
     ]
     for r in taazait_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
     story.append(Spacer(1, 4))
 
-    # Project 5: ERP System Branch-Wise
-    story.append(Paragraph("<b>Project: ERP System (Branch-Wise Management)</b>", project_title_style))
+    # Project 2: ERP System Branch-Wise
+    story.append(Paragraph("<b>2. ERP System (Branch-Wise Management)</b>", project_title_style))
     story.append(Paragraph("<b>GitHub:</b> <a href='https://github.com/Rohitiwari297/ERP_SYSTEM_BRANCH_WISE' color='#0284C7'>ERP_SYSTEM_BRANCH_WISE</a>", meta_style))
     story.append(Paragraph("<b>Tech Stack:</b> TypeScript, Node.js, Express.js, Redis, MongoDB, REST APIs", meta_style))
-    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle6', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
+    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle2', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     erp_roles = [
         "Architected and implemented the entire backend system for branch-wise enterprise resource planning.",
         "Designed multi-branch data isolation, role-based access control, inventory tracking, staff management, and financial analytics APIs."
@@ -309,17 +263,44 @@ def generate_pdf(filename):
         story.append(Paragraph(f"• {r}", bullet_style))
     story.append(Spacer(1, 4))
 
-    # Project 6: Freedom Voyages
-    story.append(Paragraph("<b>Project: Freedom Voyages – Tour & Travel Platform</b>", project_title_style))
+    # Project 3: Freedom Voyages
+    story.append(Paragraph("<b>3. Freedom Voyages – Tour & Travel Platform (Complete Backend & Admin Panel Frontend)</b>", project_title_style))
     story.append(Paragraph("<b>Live:</b> <a href='https://freedomvoyages.com/' color='#0284C7'>https://freedomvoyages.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-' color='#0284C7'>BACKEND_FREEDOM_VOYAGES</a>", meta_style))
-    story.append(Paragraph("<b>Tech Stack:</b> Node.js, Express.js, MongoDB, REST APIs", meta_style))
-    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle7', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
+    story.append(Paragraph("<b>Tech Stack:</b> Node.js, Express.js, React.js, MongoDB, REST APIs", meta_style))
+    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle3', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     freedom_roles = [
-        "Freedom Voyages is a travel platform offering curated tour packages, seamless booking, and personalized travel experiences.",
-        "Designed backend powering user authentication, trip management, booking systems, and secure APIs."
+        "Architected the complete backend and frontend of Admin Panel for travel platform offering curated tour packages, instant booking, and trip management.",
+        "Designed REST APIs powering user authentication, package management, booking systems, and admin dashboard workflows."
     ]
     for r in freedom_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
+    story.append(Spacer(1, 4))
+
+    # Project 4: Simhasth TV (Uff-TV) Admin Panel
+    story.append(Paragraph("<b>4. Simhasth TV (Uff-TV) – Admin Panel</b>", project_title_style))
+    story.append(Paragraph("<b>Hosted on:</b> cPanel Server | <b>Live:</b> <a href='https://rssindia.in.net/uff-tv/' color='#0284C7'>https://rssindia.in.net/uff-tv/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297' color='#0284C7'>github.com/Rohitiwari297</a>", meta_style))
+    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle4', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
+    simhasth_roles = [
+        "Developed and maintained a scalable Admin Panel for a large video-streaming platform, enabling content management, notification control, streaming moderation, and dashboard analytics.",
+        "Built insightful dashboards displaying top-viewed videos, top-liked videos, and real-time engagement metrics.",
+        "Improved backend API performance, allowing admins to send push notification alerts with images or video thumbnails.",
+        "Created a responsive UI using React.js and Bootstrap Icons with smooth cPanel deployment."
+    ]
+    for r in simhasth_roles:
+        story.append(Paragraph(f"• {r}", bullet_style))
+    story.append(Spacer(1, 4))
+
+    # Project 5: Shyam Aura Backend & Admin Panel
+    story.append(Paragraph("<b>5. Shyam Aura – Matrimonial Application (Backend & Admin Panel)</b>", project_title_style))
+    story.append(Paragraph("<b>Live:</b> <a href='https://aura.suryapolypack.com/' color='#0284C7'>https://aura.suryapolypack.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/Backend---Aura-Matrimonial-App-' color='#0284C7'>Backend-Aura-Matrimonial-App</a>", meta_style))
+    story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle5', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
+    aura_roles = [
+        "Architected complete backend and real-time admin analytics panel for a matrimonial platform featuring user onboarding, profile matching algorithms, search filters, chat, and subscription plans.",
+        "Implemented JWT auth, Redis caching, rate-limiting, and deployed on VPS Node.js and cPanel servers."
+    ]
+    for r in aura_roles:
+        story.append(Paragraph(f"• {r}", bullet_style))
+    story.append(Spacer(1, 4))
     story.append(Spacer(1, 6))
 
     # 8. LANGUAGE
