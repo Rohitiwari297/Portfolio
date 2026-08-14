@@ -6,6 +6,8 @@ import {
   FaAws,
   FaServer,
   FaCode,
+  FaRobot,
+  FaCloud,
 } from "react-icons/fa";
 import { 
   SiMongodb, 
@@ -17,7 +19,8 @@ import {
   SiRedis, 
   SiNginx, 
   SiDocker,
-  SiPostman
+  SiPostman,
+  SiNextdotjs
 } from "react-icons/si";
 
 function Skills() {
@@ -25,17 +28,20 @@ function Skills() {
 
   const skillList = [
     { id: 1, name: "JavaScript (ES6+)", category: "Frontend", icon: <SiJavascript size={28} className="text-yellow-400" />, level: 92, tag: "Expert" },
-    { id: 2, name: "TypeScript", category: "Backend & DevOps", icon: <SiTypescript size={28} className="text-blue-500" />, level: 85, tag: "Advanced" },
-    { id: 3, name: "React.js / Redux", category: "Frontend", icon: <FaReact size={28} className="text-cyan-400" />, level: 90, tag: "Expert" },
-    { id: 4, name: "Node.js & Express", category: "Backend & DevOps", icon: <FaNodeJs size={28} className="text-green-500" />, level: 88, tag: "Advanced" },
-    { id: 5, name: "Redis Caching", category: "Backend & DevOps", icon: <SiRedis size={28} className="text-red-500" />, level: 82, tag: "Advanced" },
-    { id: 6, name: "Nginx Reverse Proxy", category: "Backend & DevOps", icon: <SiNginx size={28} className="text-emerald-400" />, level: 80, tag: "Advanced" },
-    { id: 7, name: "MongoDB & Mongoose", category: "Databases", icon: <SiMongodb size={28} className="text-green-400" />, level: 85, tag: "Advanced" },
-    { id: 8, name: "MySQL / SQL", category: "Databases", icon: <SiMysql size={28} className="text-blue-400" />, level: 78, tag: "Intermediate" },
-    { id: 9, name: "Tailwind CSS", category: "Frontend", icon: <SiTailwindcss size={28} className="text-sky-400" />, level: 90, tag: "Expert" },
-    { id: 10, name: "Docker & Containers", category: "Backend & DevOps", icon: <SiDocker size={28} className="text-blue-400" />, level: 75, tag: "Intermediate" },
-    { id: 11, name: "Git & GitHub Actions", category: "Backend & DevOps", icon: <FaGitAlt size={28} className="text-orange-500" />, level: 88, tag: "Advanced" },
-    { id: 12, name: "Postman & REST APIs", category: "Backend & DevOps", icon: <SiPostman size={28} className="text-orange-400" />, level: 90, tag: "Expert" },
+    { id: 2, name: "React.js / Redux", category: "Frontend", icon: <FaReact size={28} className="text-cyan-400" />, level: 90, tag: "Expert" },
+    { id: 3, name: "Next.js", category: "Frontend", icon: <SiNextdotjs size={28} className="text-white" />, level: 82, tag: "Advanced" },
+    { id: 4, name: "TypeScript", category: "Backend & DevOps", icon: <SiTypescript size={28} className="text-blue-500" />, level: 85, tag: "Advanced" },
+    { id: 5, name: "Node.js & Express", category: "Backend & DevOps", icon: <FaNodeJs size={28} className="text-green-500" />, level: 88, tag: "Advanced" },
+    { id: 6, name: "AWS EC2 & Hosting (Hostinger, VPS, cPanel, Netlify)", category: "Backend & DevOps", icon: <FaAws size={28} className="text-amber-500" />, level: 86, tag: "Advanced" },
+    { id: 7, name: "AI Tools (ChatGPT, Claude, GenAI)", category: "Backend & DevOps", icon: <FaRobot size={28} className="text-purple-400" />, level: 85, tag: "Advanced" },
+    { id: 8, name: "Redis Caching", category: "Backend & DevOps", icon: <SiRedis size={28} className="text-red-500" />, level: 82, tag: "Advanced" },
+    { id: 9, name: "Nginx Reverse Proxy", category: "Backend & DevOps", icon: <SiNginx size={28} className="text-emerald-400" />, level: 80, tag: "Advanced" },
+    { id: 10, name: "MongoDB & Mongoose", category: "Databases", icon: <SiMongodb size={28} className="text-green-400" />, level: 85, tag: "Advanced" },
+    { id: 11, name: "MySQL / SQL", category: "Databases", icon: <SiMysql size={28} className="text-blue-400" />, level: 78, tag: "Intermediate" },
+    { id: 12, name: "Tailwind CSS", category: "Frontend", icon: <SiTailwindcss size={28} className="text-sky-400" />, level: 90, tag: "Expert" },
+    { id: 13, name: "Docker & Containers", category: "Backend & DevOps", icon: <SiDocker size={28} className="text-blue-400" />, level: 75, tag: "Intermediate" },
+    { id: 14, name: "Git & GitHub Actions", category: "Backend & DevOps", icon: <FaGitAlt size={28} className="text-orange-500" />, level: 88, tag: "Advanced" },
+    { id: 15, name: "Postman & REST APIs", category: "Backend & DevOps", icon: <SiPostman size={28} className="text-orange-400" />, level: 90, tag: "Expert" },
   ];
 
   const filteredSkills = filter === "All" ? skillList : skillList.filter(s => s.category === filter);

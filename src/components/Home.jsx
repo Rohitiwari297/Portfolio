@@ -34,7 +34,9 @@ function Home() {
                 className="text-emerald-400 border-b-2 border-emerald-500/50 pb-0.5"
                 strings={[
                   "Full Stack Development",
-                  "TypeScript & React.js",
+                  "React.js & Next.js",
+                  "AWS EC2 & Web Hosting",
+                  "AI Tools (ChatGPT, Claude)",
                   "Node.js & Redis Caching",
                   "Nginx Reverse Proxy & DevOps"
                 ]}
@@ -47,7 +49,7 @@ function Home() {
 
           {/* Bio Description */}
           <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl">
-            Passionate <span className="text-emerald-300 font-semibold">Full Stack Engineer</span> with expertise in <span className="text-emerald-400 font-medium">React.js, Node.js, Express, TypeScript, Redis, Nginx</span>, and <span className="text-emerald-400 font-medium">MongoDB</span>. I build high-concurrency microservices, real-time video dashboards, matrimonial backends, and multi-vendor e-commerce platforms with bulletproof reliability.
+            Passionate <span className="text-emerald-300 font-semibold">Full Stack Engineer</span> with expertise in <span className="text-emerald-400 font-medium">React.js, Next.js, Node.js, Express, TypeScript, AWS EC2, Hostinger, Hosting Raja, Netlify</span>, and <span className="text-emerald-400 font-medium">MongoDB</span>. I build high-concurrency microservices, real-time video dashboards, matrimonial backends, and multi-vendor e-commerce platforms with bulletproof reliability.
           </p>
 
           {/* Quick Stats Grid */}

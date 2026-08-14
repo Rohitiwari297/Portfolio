@@ -35,7 +35,7 @@ function About() {
               <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Engineering Profile</h2>
             </div>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Hello, I’m <span className="text-emerald-300 font-bold">Rohit Kumar Tiwari</span>, a solution-driven Full Stack Developer with 1+ years of experience. I specialize in crafting full-stack web applications using <span className="text-emerald-400 font-medium">React.js, Node.js, Express.js, TypeScript, Redis, Nginx, and MongoDB</span>. My engineering approach emphasizes clean architecture, API optimization, caching strategies, and reliable production deployments on Linux VPS and cPanel servers.
+              Hello, I’m <span className="text-emerald-300 font-bold">Rohit Kumar Tiwari</span>, a solution-driven Full Stack Developer with 1+ years of experience. I specialize in crafting full-stack web applications using <span className="text-emerald-400 font-medium">React.js, Next.js, Node.js, Express.js, TypeScript, Redis, Nginx, and MongoDB</span>. My engineering approach emphasizes clean architecture, API optimization, caching strategies, reliable cloud & web hosting on <span className="text-emerald-400 font-medium">AWS EC2, Hostinger, Hosting Raja, Linux VPS, cPanel, and Netlify</span>, alongside leveraging <span className="text-emerald-400 font-medium">AI tools (ChatGPT, Claude AI, Generative AI)</span> for efficient workflows and problem solving.
             </p>
           </div>
 
@@ -59,7 +59,8 @@ function About() {
                 <li>Engineered scalable admin panels for video-streaming platform (Simhasth TV / Uff-TV) with real-time video analytics and media alert push notifications.</li>
                 <li>Architected complete backend for matrimonial platform (Shyam Aura) with JWT auth, rate-limiting, subscription tiers, and Redis caching.</li>
                 <li>Implemented Redis caching & Nginx reverse proxy architecture, cutting API response times by 40%.</li>
-                <li>Managed microservices and deployments on Linux VPS servers and cPanel environments with 99.9% uptime.</li>
+                <li>Managed microservices, configured security groups, and hosted live applications on AWS EC2, Linux VPS, Hostinger, Hosting Raja, cPanel, and Netlify with 99.9% uptime.</li>
+                <li>Leveraged AI tools (ChatGPT, Claude AI, Generative AI) to streamline development, code reviews, and prompt-engineered solution strategies.</li>
               </ul>
             </div>
 

@@ -161,12 +161,13 @@ def generate_pdf(filename):
     # 2. SUMMARY
     add_section_header("SUMMARY")
     summary_bullets = [
-        "Skilled in MERN stack: React.js, Node.js, Express.js, MongoDB, TypeScript, Redis, Nginx.",
-        "Built responsive, user-friendly web apps with real-time features and high concurrency.",
-        "Experience in API integration, database handling, Redis caching, rate-limiting, and authentication.",
-        "Proficient with Git, GitHub, Docker, Git-Actions (CI/CD) and deployment (Hostinger, Hosting Raja, VPS, cPanel, Netlify).",
-        "Quick learner with strong debugging and problem-solving skills.",
-        "Collaborative team player with a passion for clean, scalable code."
+        "Full Stack Developer specializing in <b>JavaScript (ES6+), React.js, Next.js, Node.js, Express.js, and MongoDB/SQL</b> databases.",
+        "Hands-on experience configuring, deploying, and hosting full-stack web applications on <b>AWS EC2, Linux VPS, Hostinger, Hosting Raja, cPanel, and Netlify</b> environments.",
+        "Proficient in leveraging AI tools including <b>ChatGPT, Claude AI, and Generative AI</b> to optimize development workflows, debug complex code, and accelerate feature delivery.",
+        "Hands-on expertise in RESTful API development, data integration from backend services, Redis caching, and Nginx load balancing.",
+        "Experienced in troubleshooting, debugging, and optimizing web application performance for low latency and high concurrency.",
+        "Strong version control proficiency with <b>Git & GitHub</b>, combined with CI/CD concepts and cloud/server administration.",
+        "Analytical problem solver with excellent communication and teamwork abilities, thriving in fast-paced, dynamic team environments."
     ]
     for pt in summary_bullets:
         story.append(Paragraph(f"• {pt}", bullet_style))
@@ -174,56 +175,56 @@ def generate_pdf(filename):
     # 3. TECHNICAL SKILLS
     add_section_header("TECHNICAL SKILLS")
     skills_list = [
-        "<b>Language:</b> C, JavaScript, TypeScript, SQL",
-        "<b>Front-End:</b> HTML5, CSS3, JavaScript (ES6+), React.js, Redux Toolkit, Tailwind, Responsive Design.",
-        "<b>Back-End:</b> Node.js, Express.js, RESTful APIs, Redis, Nginx (Reverse Proxy & Load Balancing).",
-        "<b>Database:</b> MongoDB, Mongoose, SQL/MySQL.",
-        "<b>Version Control:</b> Git, GitHub, Git Actions (CI/CD).",
-        "<b>Other Tools:</b> Postman, VS Code, Bash, Familiar with AWS S3, Netlify, Docker, Basic understanding of Docker and CI/CD concepts, Interest in DevOps practices and automation."
+        "<b>Programming Languages:</b> JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL, C",
+        "<b>Front-End Development:</b> React.js, Next.js, Redux Toolkit, Responsive Web Design, Mobile Compatibility, UI/UX Collaboration, Tailwind CSS, Bootstrap.",
+        "<b>Back-End Development:</b> Node.js, Express.js, RESTful APIs, Web Services, Data Integration, Redis Caching, Nginx (Reverse Proxy & Load Balancing).",
+        "<b>Cloud & Hosting Platforms:</b> AWS EC2 (Instance Setup & Security Groups), Linux VPS, Hostinger, Hosting Raja, cPanel Hosting, Netlify, Basic Docker.",
+        "<b>AI Tools & Generative AI:</b> ChatGPT, Claude AI, Generative AI (Prompt Engineering, Code Refactoring, Debugging & Workflow Optimization).",
+        "<b>Databases & Storage:</b> MongoDB, Mongoose, SQL / MySQL.",
+        "<b>Version Control & Tools:</b> Git, GitHub, Postman, VS Code, Bash.",
+        "<b>Engineering Practices:</b> Troubleshooting & Debugging, Performance Optimization, Web Security (JWT, Role-Based Access, Rate Limiting), Agile Teamwork."
     ]
     for sk in skills_list:
         story.append(Paragraph(f"• {sk}", bullet_style))
 
-    # 4. KEY STRENGTH
-    add_section_header("Key Strength")
+    # 4. KEY STRENGTHS
+    add_section_header("Key Strengths")
     strengths = [
-        "Strong problem-solving and debugging skills.",
-        "Effective communication and teamwork abilities.",
-        "Quick learner with a passion for staying updated on emerging technologies."
+        "<b>Problem-Solving & Debugging:</b> Efficient root-cause diagnosis and code optimization.",
+        "<b>Cross-Functional Collaboration:</b> Seamless teamwork with UI/UX designers, backend developers, and product teams.",
+        "<b>Adaptability:</b> Fast learner staying continuously updated with emerging web technologies, cloud infrastructure, and AI tools."
     ]
     for st in strengths:
         story.append(Paragraph(f"• {st}", bullet_style))
 
-    # 5. CERTIFICATION
-    add_section_header("CERTIFICATION")
+    # 5. CERTIFICATIONS
+    add_section_header("CERTIFICATIONS")
     certs = [
-        "Full-Stack Web Development Bootcamp, Physics Wallah",
-        "JavaScript Essentials, Physics Wallah",
-        "React.js Basics, Physics Wallah"
+        "Full-Stack Web Development Bootcamp – Physics Wallah",
+        "JavaScript Essentials – Physics Wallah",
+        "React.js Basics – Physics Wallah"
     ]
     for c in certs:
         story.append(Paragraph(f"• {c}", bullet_style))
 
     # 6. EDUCATION
     add_section_header("EDUCATION")
-    story.append(Paragraph("<b>Master of Computer Science (CS)</b>, Veer Bahadur Singh Purvanchal University Uttar Pradesh", ParagraphStyle('EduTitle', parent=styles['Normal'], fontName='Helvetica-Oblique', fontSize=10, leading=13, spaceAfter=3)))
-    story.append(Paragraph("• Specialized in Full-Stack Web Development (MERN Stack)", bullet_style))
-    story.append(Paragraph("• Focused on building scalable web applications using Node.js and React", bullet_style))
+    story.append(Paragraph("<b>Master of Computer Science (CS)</b>, Veer Bahadur Singh Purvanchal University, Uttar Pradesh", ParagraphStyle('EduTitle', parent=styles['Normal'], fontName='Helvetica-Oblique', fontSize=10, leading=13, spaceAfter=3)))
+    story.append(Paragraph("• Specialized in Full-Stack Web Development (MERN Stack: React.js, Node.js, JavaScript)", bullet_style))
+    story.append(Paragraph("• Coursework in Software Engineering, Web Development, Database Management, and Data Structures", bullet_style))
 
     # 7. PROFESSIONAL EXPERIENCE
     add_section_header("Professional Experience")
 
     # Entry 1: Drishtee
     story.append(Paragraph("<b>1. Company: Drishtee Development & Communication Limited</b> (Oct 2024 – Mar 2025)", company_heading))
-    story.append(Paragraph("React.Js Developer Intern", job_title_style))
+    story.append(Paragraph("React.js Developer Intern", job_title_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     drishtee_roles = [
-        "Contributed to the development of the Drishtee Kiosk Portal, enhancing the user experience for Customer Service Points (CSPs) and streamlining document verification for employees.",
-        "Collaborated with design and backend teams to create responsive, user-friendly interfaces for both the CSP interface and Admin Portal.",
-        "Developed and implemented front-end features using HTML, CSS, JavaScript, and React.js, ensuring seamless integration with backend systems.",
-        "Assisted in data validation mechanisms, enabling employees to efficiently verify CSP-submitted documents, enhancing accuracy and productivity.",
-        "Focused on UI/UX improvements, creating a clean and intuitive design, improving usability for both internal (Admin) and external (CSP) users.",
-        "Resolved bugs, optimized performance, and conducted testing to ensure platform responsiveness across multiple devices."
+        "Developed and implemented high-quality front-end features using <b>JavaScript, React.js, HTML, and CSS</b> for the Drishtee Kiosk Portal.",
+        "Collaborated with UX/UI designers to craft user-friendly, responsive interfaces optimized for mobile and desktop compatibility.",
+        "Integrated data from backend RESTful services and databases to streamline document verification workflows for internal users.",
+        "Troubleshot and debugged front-end web application issues, improving UI responsiveness and user productivity by 35%."
     ]
     for r in drishtee_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
@@ -236,15 +237,13 @@ def generate_pdf(filename):
     # Project 1: TaazaIt (Frontend & Backend)
     story.append(Paragraph("<b>1. Multi-Vendor Grocery Platform – TaazaIt (Frontend & Backend)</b>", project_title_style))
     story.append(Paragraph("<b>Live:</b> <a href='https://taazait.com/' color='#0284C7'>https://taazait.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/backend-node-grocery-api' color='#0284C7'>backend-node-grocery-api</a>", meta_style))
-    story.append(Paragraph("<b>Tech Stack:</b> React.js, Node.js, Express.js, MongoDB, Redis, Nginx, REST APIs", meta_style))
+    story.append(Paragraph("<b>Tech Stack:</b> JavaScript, React.js, Node.js, Express.js, MongoDB, Redis, Nginx, AWS EC2, RESTful APIs, Git", meta_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle1', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     taazait_roles = [
-        "Developing a multi-vendor grocery e-commerce platform enabling multiple sellers to list and manage products while customers can browse, add to cart, and place orders.",
-        "Built secure user authentication (OTP, JWT cookies) and role-based access for customers, vendors, and administrators.",
-        "Implemented product management system allowing vendors to add, update, and manage inventory in real time.",
-        "Developed shopping cart and order management functionality with dynamic price calculations, Redis rate limiting, and Nginx load balancing.",
-        "Integrated responsive React.js UI to ensure smooth user experience across mobile and desktop devices.",
-        "Designed RESTful APIs for efficient communication between frontend and backend."
+        "Engineered full-stack web application features using <b>React.js and Node.js</b> for a multi-vendor grocery e-commerce platform.",
+        "Built RESTful APIs and integrated MongoDB database services with role-based access control, OTP authentication, and HTTP-only JWT cookies.",
+        "Configured server environments and hosted application services on <b>AWS EC2</b> instances using Nginx reverse proxying and PM2.",
+        "Implemented Redis rate-limiting and Nginx reverse proxying to troubleshoot latency and optimize web application performance."
     ]
     for r in taazait_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
@@ -253,11 +252,11 @@ def generate_pdf(filename):
     # Project 2: ERP System Branch-Wise
     story.append(Paragraph("<b>2. ERP System (Branch-Wise Management)</b>", project_title_style))
     story.append(Paragraph("<b>GitHub:</b> <a href='https://github.com/Rohitiwari297/ERP_SYSTEM_BRANCH_WISE' color='#0284C7'>ERP_SYSTEM_BRANCH_WISE</a>", meta_style))
-    story.append(Paragraph("<b>Tech Stack:</b> TypeScript, Node.js, Express.js, Redis, MongoDB, REST APIs", meta_style))
+    story.append(Paragraph("<b>Tech Stack:</b> JavaScript, TypeScript, Node.js, Express.js, Redis, MongoDB, RESTful APIs", meta_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle2', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     erp_roles = [
-        "Architected and implemented the entire backend system for branch-wise enterprise resource planning.",
-        "Designed multi-branch data isolation, role-based access control, inventory tracking, staff management, and financial analytics APIs."
+        "Architected and implemented enterprise resource management backend APIs using <b>Node.js, Express, and MongoDB</b>.",
+        "Designed multi-branch data isolation, inventory tracking, role-based access, and financial reporting RESTful services."
     ]
     for r in erp_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
@@ -266,11 +265,11 @@ def generate_pdf(filename):
     # Project 3: Freedom Voyages
     story.append(Paragraph("<b>3. Freedom Voyages – Tour & Travel Platform (Complete Backend & Admin Panel Frontend)</b>", project_title_style))
     story.append(Paragraph("<b>Live:</b> <a href='https://freedomvoyages.com/' color='#0284C7'>https://freedomvoyages.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-' color='#0284C7'>BACKEND_FREEDOM_VOYAGES</a>", meta_style))
-    story.append(Paragraph("<b>Tech Stack:</b> Node.js, Express.js, React.js, MongoDB, REST APIs", meta_style))
+    story.append(Paragraph("<b>Tech Stack:</b> JavaScript, React.js, Node.js, Express.js, MongoDB, RESTful APIs, Git", meta_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle3', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     freedom_roles = [
-        "Architected the complete backend and frontend of Admin Panel for travel platform offering curated tour packages, instant booking, and trip management.",
-        "Designed REST APIs powering user authentication, package management, booking systems, and admin dashboard workflows."
+        "Developed complete Node.js backend services and responsive <b>React.js Admin Panel</b> for tour and travel booking platform.",
+        "Integrated backend data with custom React UI components, enabling real-time package updates and user trip management."
     ]
     for r in freedom_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
@@ -279,12 +278,11 @@ def generate_pdf(filename):
     # Project 4: Simhasth TV (Uff-TV) Admin Panel
     story.append(Paragraph("<b>4. Simhasth TV (Uff-TV) – Admin Panel</b>", project_title_style))
     story.append(Paragraph("<b>Hosted on:</b> cPanel Server | <b>Live:</b> <a href='https://rssindia.in.net/uff-tv/' color='#0284C7'>https://rssindia.in.net/uff-tv/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297' color='#0284C7'>github.com/Rohitiwari297</a>", meta_style))
+    story.append(Paragraph("<b>Tech Stack:</b> JavaScript, React.js, Node.js, Bootstrap, RESTful APIs", meta_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle4', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     simhasth_roles = [
-        "Developed and maintained a scalable Admin Panel for a large video-streaming platform, enabling content management, notification control, streaming moderation, and dashboard analytics.",
-        "Built insightful dashboards displaying top-viewed videos, top-liked videos, and real-time engagement metrics.",
-        "Improved backend API performance, allowing admins to send push notification alerts with images or video thumbnails.",
-        "Created a responsive UI using React.js and Bootstrap Icons with smooth cPanel deployment."
+        "Created a user-friendly, responsive Admin Panel in <b>React.js</b> for a large video-streaming platform.",
+        "Built interactive analytics dashboards (top-viewed videos, user metrics) and push notification moderation tools."
     ]
     for r in simhasth_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
@@ -293,10 +291,11 @@ def generate_pdf(filename):
     # Project 5: Shyam Aura Backend & Admin Panel
     story.append(Paragraph("<b>5. Shyam Aura – Matrimonial Application (Backend & Admin Panel)</b>", project_title_style))
     story.append(Paragraph("<b>Live:</b> <a href='https://aura.suryapolypack.com/' color='#0284C7'>https://aura.suryapolypack.com/</a> | <b>GitHub:</b> <a href='https://github.com/Rohitiwari297/Backend---Aura-Matrimonial-App-' color='#0284C7'>Backend-Aura-Matrimonial-App</a>", meta_style))
+    story.append(Paragraph("<b>Tech Stack:</b> JavaScript, TypeScript, Node.js, Express.js, Redis, AWS EC2 / VPS, RESTful APIs", meta_style))
     story.append(Paragraph("<b>Roles and Responsibilities:</b>", ParagraphStyle('RolesTitle5', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=9.5, leading=13, spaceAfter=2)))
     aura_roles = [
-        "Architected complete backend and real-time admin analytics panel for a matrimonial platform featuring user onboarding, profile matching algorithms, search filters, chat, and subscription plans.",
-        "Implemented JWT auth, Redis caching, rate-limiting, and deployed on VPS Node.js and cPanel servers."
+        "Architected scalable backend microservices for matrimonial user onboarding, profile matching, search filters, and chat APIs.",
+        "Integrated JWT authentication, Redis caching, rate-limiting, and deployed Node.js backend on <b>AWS EC2</b> / VPS cloud environment."
     ]
     for r in aura_roles:
         story.append(Paragraph(f"• {r}", bullet_style))
