@@ -19,6 +19,7 @@ function PortFolio() {
       subtitle: "Multi-Branch Enterprise Resource Backend",
       description: "Complete backend system architected for branch-wise enterprise management. Controls multi-branch data isolation, role-based access, inventory tracking, staff management, and financial reporting APIs.",
       tech: ["TypeScript", "Node.js", "Express", "Redis", "MongoDB", "REST APIs"],
+      liveUrl: "https://api.shantielectricals.tech/login",
       githubUrl: "https://github.com/Rohitiwari297/ERP_SYSTEM_BRANCH_WISE",
       featured: true
     },
