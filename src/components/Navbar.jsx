@@ -26,16 +26,16 @@ function Navbar() {
             <img 
               src={Image} 
               className="h-10 w-10 rounded-full border-2 border-emerald-400 object-cover object-[50%_15%] group-hover:scale-105 transition-transform duration-300 shadow-[0_0_12px_rgba(52,211,153,0.3)]" 
-              alt="Rohit Tiwari" 
+              alt="Rohit Tiwari, Full Stack Developer"
             />
             <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-emerald-500 ring-2 ring-[#0b0b0d]"></span>
           </div>
           <div>
             <h1 className="font-extrabold text-xl tracking-wide text-gray-100 group-hover:text-emerald-400 transition-colors">
-              Rohit<span className="text-emerald-400">.dev</span>
+              Rohit <span className="text-emerald-400">Tiwari</span>
             </h1>
             <p className="text-[10px] uppercase tracking-wider text-emerald-400 font-mono -mt-1 select-none">
-              Full Stack Engineer
+              Full Stack Developer
             </p>
           </div>
         </Link>
