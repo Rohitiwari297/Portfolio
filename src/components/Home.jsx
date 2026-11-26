@@ -38,7 +38,7 @@ function Home() {
                   "AWS EC2 & Web Hosting",
                   "AI Tools (ChatGPT, Claude)",
                   "Node.js & Redis Caching",
-                  "Nginx Reverse Proxy & DevOps"
+                  "Nginx Reverse Proxy & Deployments"
                 ]}
                 typeSpeed={50}
                 backSpeed={35}
@@ -49,22 +49,22 @@ function Home() {
 
           {/* Bio Description */}
           <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl">
-            Passionate <span className="text-emerald-300 font-semibold">Full Stack Engineer</span> with expertise in <span className="text-emerald-400 font-medium">React.js, Next.js, Node.js, Express, TypeScript, AWS EC2, Hostinger, Hosting Raja, Netlify</span>, and <span className="text-emerald-400 font-medium">MongoDB</span>. I build high-concurrency microservices, real-time video dashboards, matrimonial backends, and multi-vendor e-commerce platforms with bulletproof reliability.
+            <span className="text-emerald-300 font-semibold">Full Stack Developer</span> with ~2 years of experience building production apps on the <span className="text-emerald-400 font-medium">MERN stack with TypeScript</span>. I design secure REST APIs (<span className="text-emerald-400 font-medium">RBAC, OTP, JWT</span>), speed them up with <span className="text-emerald-400 font-medium">Redis and Nginx</span>, and deploy on <span className="text-emerald-400 font-medium">AWS EC2 and Linux VPS</span>. My work spans multi-vendor e-commerce, ERP, travel booking, LMS and matrimonial platforms.
           </p>
 
           {/* Quick Stats Grid */}
           <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-3 pb-3 border-y border-gray-800/80 max-w-xl mx-auto md:mx-0 text-center">
             <div className="p-2">
-              <p className="text-lg sm:text-2xl font-bold text-emerald-400">1+ Years</p>
-              <p className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-mono">Industry Exp</p>
+              <p className="text-lg sm:text-2xl font-bold text-emerald-400">~2 Years</p>
+              <p className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-mono">Experience</p>
             </div>
             <div className="p-2 border-x border-gray-800/80">
-              <p className="text-lg sm:text-2xl font-bold text-cyan-400">4+ Live</p>
+              <p className="text-lg sm:text-2xl font-bold text-cyan-400">5 Live</p>
               <p className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-mono">Production Apps</p>
             </div>
             <div className="p-2">
-              <p className="text-lg sm:text-2xl font-bold text-purple-400">10+ Repos</p>
-              <p className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-mono">GitHub Repos</p>
+              <p className="text-lg sm:text-2xl font-bold text-purple-400">15 Days</p>
+              <p className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-mono">Notice Period</p>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ function Home() {
               className="px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-gray-950 font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.4)] flex items-center space-x-2"
             >
               <FaDownload className="text-base" />
-              <span>Download ATS Resume</span>
+              <span>Download Resume</span>
             </a>
 
             <Link
@@ -159,7 +159,7 @@ function Home() {
                     <FaCheckCircle className="text-emerald-400 text-xs" />
                   </h3>
                   <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
-                    SDE 2026
+                    Open to Work
                   </span>
                 </div>
                 <p className="text-[11px] font-mono text-gray-300 truncate">

@@ -4,15 +4,12 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaAws,
-  FaServer,
   FaCode,
   FaRobot,
-  FaCloud,
 } from "react-icons/fa";
-import { 
-  SiMongodb, 
-  SiExpress, 
-  SiJavascript, 
+import {
+  SiMongodb,
+  SiJavascript,
   SiTailwindcss, 
   SiTypescript, 
   SiMysql, 
@@ -27,21 +24,21 @@ function Skills() {
   const [filter, setFilter] = useState("All");
 
   const skillList = [
-    { id: 1, name: "JavaScript (ES6+)", category: "Frontend", icon: <SiJavascript size={28} className="text-yellow-400" />, level: 92, tag: "Expert" },
-    { id: 2, name: "React.js / Redux", category: "Frontend", icon: <FaReact size={28} className="text-cyan-400" />, level: 90, tag: "Expert" },
-    { id: 3, name: "Next.js", category: "Frontend", icon: <SiNextdotjs size={28} className="text-white" />, level: 82, tag: "Advanced" },
-    { id: 4, name: "TypeScript", category: "Backend & DevOps", icon: <SiTypescript size={28} className="text-blue-500" />, level: 85, tag: "Advanced" },
-    { id: 5, name: "Node.js & Express", category: "Backend & DevOps", icon: <FaNodeJs size={28} className="text-green-500" />, level: 88, tag: "Advanced" },
-    { id: 6, name: "AWS EC2 & Hosting (Hostinger, VPS, cPanel, Netlify)", category: "Backend & DevOps", icon: <FaAws size={28} className="text-amber-500" />, level: 86, tag: "Advanced" },
-    { id: 7, name: "AI Tools (ChatGPT, Claude, GenAI)", category: "Backend & DevOps", icon: <FaRobot size={28} className="text-purple-400" />, level: 85, tag: "Advanced" },
-    { id: 8, name: "Redis Caching", category: "Backend & DevOps", icon: <SiRedis size={28} className="text-red-500" />, level: 82, tag: "Advanced" },
-    { id: 9, name: "Nginx Reverse Proxy", category: "Backend & DevOps", icon: <SiNginx size={28} className="text-emerald-400" />, level: 80, tag: "Advanced" },
-    { id: 10, name: "MongoDB & Mongoose", category: "Databases", icon: <SiMongodb size={28} className="text-green-400" />, level: 85, tag: "Advanced" },
-    { id: 11, name: "MySQL / SQL", category: "Databases", icon: <SiMysql size={28} className="text-blue-400" />, level: 78, tag: "Intermediate" },
-    { id: 12, name: "Tailwind CSS", category: "Frontend", icon: <SiTailwindcss size={28} className="text-sky-400" />, level: 90, tag: "Expert" },
-    { id: 13, name: "Docker & Containers", category: "Backend & DevOps", icon: <SiDocker size={28} className="text-blue-400" />, level: 75, tag: "Intermediate" },
-    { id: 14, name: "Git & GitHub Actions", category: "Backend & DevOps", icon: <FaGitAlt size={28} className="text-orange-500" />, level: 88, tag: "Advanced" },
-    { id: 15, name: "Postman & REST APIs", category: "Backend & DevOps", icon: <SiPostman size={28} className="text-orange-400" />, level: 90, tag: "Expert" },
+    { id: 1, name: "JavaScript (ES6+)", category: "Frontend", icon: <SiJavascript size={28} className="text-yellow-400" />, tag: "Daily use", usedIn: "Every project, frontend and backend" },
+    { id: 2, name: "React.js / Redux Toolkit", category: "Frontend", icon: <FaReact size={28} className="text-cyan-400" />, tag: "Daily use", usedIn: "LMS, Freedom Voyages admin panel, grocery platform" },
+    { id: 3, name: "Next.js", category: "Frontend", icon: <SiNextdotjs size={28} className="text-white" />, tag: "Working", usedIn: "Frontend projects" },
+    { id: 4, name: "TypeScript", category: "Backend & DevOps", icon: <SiTypescript size={28} className="text-blue-500" />, tag: "Working", usedIn: "ERP backend, Wedlock matrimonial backend" },
+    { id: 5, name: "Node.js & Express", category: "Backend & DevOps", icon: <FaNodeJs size={28} className="text-green-500" />, tag: "Daily use", usedIn: "All REST APIs: grocery, ERP, travel, LMS, Wedlock" },
+    { id: 6, name: "AWS EC2 & Linux VPS Hosting", category: "Backend & DevOps", icon: <FaAws size={28} className="text-amber-500" />, tag: "Working", usedIn: "Grocery platform and Wedlock, with Nginx and PM2" },
+    { id: 7, name: "AI Tools (ChatGPT, Claude)", category: "Backend & DevOps", icon: <FaRobot size={28} className="text-purple-400" />, tag: "Daily use", usedIn: "Refactoring, debugging and faster delivery" },
+    { id: 8, name: "Redis Caching & Rate Limiting", category: "Backend & DevOps", icon: <SiRedis size={28} className="text-red-500" />, tag: "Working", usedIn: "Grocery platform, ERP, Wedlock" },
+    { id: 9, name: "Nginx Reverse Proxy", category: "Backend & DevOps", icon: <SiNginx size={28} className="text-emerald-400" />, tag: "Working", usedIn: "Reverse proxy and load balancing on EC2 / VPS" },
+    { id: 10, name: "MongoDB & Mongoose", category: "Databases", icon: <SiMongodb size={28} className="text-green-400" />, tag: "Daily use", usedIn: "Schema design across all projects" },
+    { id: 11, name: "MySQL / SQL", category: "Databases", icon: <SiMysql size={28} className="text-blue-400" />, tag: "Familiar", usedIn: "Relational database fundamentals" },
+    { id: 12, name: "Tailwind CSS", category: "Frontend", icon: <SiTailwindcss size={28} className="text-sky-400" />, tag: "Daily use", usedIn: "LMS and this portfolio" },
+    { id: 13, name: "Docker", category: "Backend & DevOps", icon: <SiDocker size={28} className="text-blue-400" />, tag: "Familiar", usedIn: "Basic containerisation" },
+    { id: 14, name: "Git & GitHub", category: "Backend & DevOps", icon: <FaGitAlt size={28} className="text-orange-500" />, tag: "Daily use", usedIn: "Version control and collaboration" },
+    { id: 15, name: "Postman & REST APIs", category: "Backend & DevOps", icon: <SiPostman size={28} className="text-orange-400" />, tag: "Daily use", usedIn: "API design, testing and documentation" },
   ];
 
   const filteredSkills = filter === "All" ? skillList : skillList.filter(s => s.category === filter);
@@ -60,7 +57,7 @@ function Skills() {
             Skills & <span className="text-emerald-400">Tech Stack</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-            Comprehensive toolkit covering full-stack web development, TypeScript microservices, Redis caching layers, and Nginx server infrastructure.
+            The tools I use to build, secure, speed up and deploy web applications, and where I have used them.
           </p>
 
           {/* Filter Category Tabs */}
@@ -83,7 +80,7 @@ function Skills() {
 
         {/* Skill Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {filteredSkills.map(({ id, name, icon, level, tag }) => (
+          {filteredSkills.map(({ id, name, icon, tag, usedIn }) => (
             <div
               key={id}
               className="relative bg-[#14161c] border border-gray-800/80 p-6 rounded-2xl shadow-lg hover:border-emerald-500/50 hover:shadow-emerald-500/10 transition duration-300 group"
@@ -97,20 +94,12 @@ function Skills() {
                 </span>
               </div>
 
-              <h3 className="text-lg font-bold text-gray-100 mb-3">{name}</h3>
+              <h3 className="text-lg font-bold text-gray-100 mb-2">{name}</h3>
 
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-800 rounded-full h-2.5 overflow-hidden">
-                <div
-                  className="bg-gradient-to-r from-emerald-500 to-teal-400 h-2.5 rounded-full transition-all duration-700 ease-out"
-                  style={{ width: `${level}%` }}
-                ></div>
-              </div>
-
-              <div className="mt-2 flex justify-between text-xs text-gray-400 font-mono">
-                <span>Proficiency</span>
-                <span className="text-emerald-400 font-semibold">{level}%</span>
-              </div>
+              <p className="text-xs text-gray-400 leading-relaxed">
+                <span className="text-emerald-400 font-mono">Used in: </span>
+                {usedIn}
+              </p>
             </div>
           ))}
         </div>

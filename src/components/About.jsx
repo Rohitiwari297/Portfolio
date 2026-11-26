@@ -21,7 +21,7 @@ function About() {
             About Me
           </h1>
           <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
-            Full Stack Developer specialized in building robust web applications, high-performance backends with Redis & Nginx, and responsive React frontend systems.
+            Full Stack Developer building secure, fast web applications: Node.js APIs backed by Redis and Nginx, with responsive React frontends.
           </p>
         </div>
 
@@ -35,8 +35,22 @@ function About() {
               <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Engineering Profile</h2>
             </div>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Hello, I’m <span className="text-emerald-300 font-bold">Rohit Kumar Tiwari</span>, a solution-driven Full Stack Developer with 1+ years of experience. I specialize in crafting full-stack web applications using <span className="text-emerald-400 font-medium">React.js, Next.js, Node.js, Express.js, TypeScript, Redis, Nginx, and MongoDB</span>. My engineering approach emphasizes clean architecture, API optimization, caching strategies, reliable cloud & web hosting on <span className="text-emerald-400 font-medium">AWS EC2, Hostinger, Hosting Raja, Linux VPS, cPanel, and Netlify</span>, alongside leveraging <span className="text-emerald-400 font-medium">AI tools (ChatGPT, Claude AI, Generative AI)</span> for efficient workflows and problem solving.
+              Hello, I’m <span className="text-emerald-300 font-bold">Rohit Kumar Tiwari</span>, a Full Stack Developer with ~2 years of experience (including an internship) building production web applications with <span className="text-emerald-400 font-medium">React.js, Next.js, Node.js, Express.js, TypeScript and MongoDB</span>. I enjoy backend work: secure REST APIs, role-based access, caching with <span className="text-emerald-400 font-medium">Redis</span>, and deployments behind <span className="text-emerald-400 font-medium">Nginx</span> on <span className="text-emerald-400 font-medium">AWS EC2, Linux VPS and cPanel</span>. I also use <span className="text-emerald-400 font-medium">AI tools (ChatGPT, Claude)</span> to refactor, debug and ship faster.
             </p>
+            <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+              <div className="p-3 rounded-xl bg-[#12141a] border border-gray-800">
+                <p className="text-emerald-400 font-bold">Secure APIs</p>
+                <p className="text-gray-400 mt-1">RBAC, OTP login, HTTP-only JWT cookies, rate limiting</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#12141a] border border-gray-800">
+                <p className="text-emerald-400 font-bold">Performance</p>
+                <p className="text-gray-400 mt-1">Redis caching and Nginx reverse proxy / load balancing</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#12141a] border border-gray-800">
+                <p className="text-emerald-400 font-bold">Deployment</p>
+                <p className="text-gray-400 mt-1">AWS EC2, Linux VPS, PM2, cPanel hosting</p>
+              </div>
+            </div>
           </div>
 
           {/* Professional Experience */}
@@ -56,11 +70,11 @@ function About() {
               </div>
               <p className="text-xs text-gray-400 font-mono">RSS Infotech Pvt. Ltd.</p>
               <ul className="text-xs sm:text-sm text-gray-300 space-y-1.5 list-disc list-inside pt-1">
-                <li>Engineered scalable admin panels for video-streaming platform (Simhasth TV / Uff-TV) with real-time video analytics and media alert push notifications.</li>
-                <li>Architected complete backend for matrimonial platform (Shyam Aura) with JWT auth, rate-limiting, subscription tiers, and Redis caching.</li>
-                <li>Implemented Redis caching & Nginx reverse proxy architecture, cutting API response times by 40%.</li>
-                <li>Managed microservices, configured security groups, and hosted live applications on AWS EC2, Linux VPS, Hostinger, Hosting Raja, cPanel, and Netlify with 99.9% uptime.</li>
-                <li>Leveraged AI tools (ChatGPT, Claude AI, Generative AI) to streamline development, code reviews, and prompt-engineered solution strategies.</li>
+                <li>Built full-stack features for a multi-vendor grocery e-commerce platform with RBAC, OTP authentication and HTTP-only JWT cookies.</li>
+                <li>Developed REST APIs and backends for an ERP (multi-branch data isolation, inventory, financial reporting), a tour &amp; travel platform with a React admin panel, an LMS and a matrimonial app.</li>
+                <li>Added Redis caching, rate limiting and Nginx reverse proxy / load balancing to troubleshoot latency and improve performance.</li>
+                <li>Set up and deployed applications on AWS EC2 (instances, security groups), Linux VPS and cPanel using PM2 and Nginx.</li>
+                <li>Used AI tools (ChatGPT, Claude) for code refactoring, debugging and faster delivery.</li>
               </ul>
             </div>
 
@@ -74,8 +88,9 @@ function About() {
               </div>
               <p className="text-xs text-gray-400 font-mono">Drishtee Development & Communication Ltd.</p>
               <ul className="text-xs sm:text-sm text-gray-300 space-y-1.5 list-disc list-inside pt-1">
-                <li>Contributed to Drishtee Kiosk Portal, optimizing document verification for CSP employees.</li>
-                <li>Developed responsive frontend components using React.js, JavaScript (ES6+), and CSS3.</li>
+                <li>Built React.js front-end features for the Drishtee Kiosk Portal, streamlining document verification for employees.</li>
+                <li>Worked with UX/UI designers on responsive interfaces for mobile and desktop, integrating data from backend REST services.</li>
+                <li>Debugged front-end issues and improved UI responsiveness and productivity by 35%.</li>
               </ul>
             </div>
           </div>

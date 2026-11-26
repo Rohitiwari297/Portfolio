@@ -16,16 +16,16 @@ function Contact() {
             Let's Build Something <span className="text-emerald-400">Great</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base">
-            Open for full-time engineering roles, backend microservice consulting, or full-stack web application development.
+            Open to full-time Full Stack / Backend roles. Available to join within 15 days.
           </p>
         </div>
 
         {/* ATS Resume Download Banner */}
         <div className="bg-gradient-to-r from-emerald-950/40 via-[#141722] to-emerald-950/40 border border-emerald-500/40 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-[0_0_25px_rgba(16,185,129,0.15)]">
           <div className="space-y-2 text-center sm:text-left">
-            <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest font-bold">Updated 2026/2027 ATS Resume</span>
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-100">Official Full Stack & DevOps Resume</h3>
-            <p className="text-xs sm:text-sm text-gray-400">Includes TS, Redis, Nginx, MERN Stack, Work Experience & Top GitHub Projects.</p>
+            <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest font-bold">Resume · PDF</span>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-100">Full Stack Developer Resume</h3>
+            <p className="text-xs sm:text-sm text-gray-400">MERN, TypeScript, Redis, Nginx and AWS, with work experience and key projects.</p>
           </div>
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
@@ -33,7 +33,7 @@ function Contact() {
             className="px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow-[0_0_15px_rgba(16,185,129,0.4)] flex items-center space-x-2 shrink-0 transform hover:scale-105"
           >
             <FaDownload className="text-sm" />
-            <span>Download ATS Resume</span>
+            <span>Download Resume</span>
           </a>
         </div>
 

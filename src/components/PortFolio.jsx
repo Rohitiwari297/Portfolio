@@ -1,6 +1,5 @@
 import React from "react";
 import { FaExternalLinkAlt, FaGithub, FaFolderOpen } from "react-icons/fa";
-import { SiTypescript, SiRedis, SiNginx, SiReact, SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
 
 function PortFolio() {
   const projects = [
@@ -31,6 +30,16 @@ function PortFolio() {
       tech: ["Node.js", "Express.js", "React.js", "MongoDB", "REST APIs"],
       liveUrl: "https://freedomvoyages.com/",
       githubUrl: "https://github.com/Rohitiwari297/BACKEND_FREEDOM_VOYAGES_-tours_-_travels-",
+      featured: true
+    },
+    {
+      id: 8,
+      title: "Learning Management System (LMS)",
+      subtitle: "Course Platform with Admin, Instructor & Student Dashboards",
+      description: "End-to-end LMS built from scratch: course browsing, enrollment and progress tracking, with JWT/OAuth authentication and role-based access control across three dashboards, backed by structured MongoDB schemas.",
+      tech: ["React.js", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+      liveUrl: "https://rssindia.in.net/lms-plateform/",
+      githubUrl: "https://github.com/Rohitiwari297/LMS-E",
       featured: true
     },
     {
@@ -87,7 +96,7 @@ function PortFolio() {
             Production Projects & <span className="text-emerald-400">Open Source</span>
           </h1>
           <p className="text-gray-400 text-sm sm:text-base">
-            Demonstrated work featuring TypeScript, Branch-Wise ERP Backends, Redis caching, Nginx reverse proxies, Node.js microservices, and responsive React frontend applications.
+            Live applications and source code across e-commerce, ERP, travel, learning and matrimonial products, built with Node.js, React, TypeScript, Redis and Nginx.
           </p>
         </div>
 
