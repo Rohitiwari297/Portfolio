@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../../public/Image.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa";
@@ -17,24 +16,24 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[#0b0b0d]/90 backdrop-blur-md border-b border-gray-800/80 z-50 transition-all duration-300">
+    <nav className="fixed top-0 left-0 right-0 bg-[#161616]/90 backdrop-blur-md border-b border-[#2a2a2d] z-50 transition-all duration-300">
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-16 h-16 flex justify-between items-center">
         
         {/* Brand Logo */}
         <Link to="/" className="flex items-center space-x-3 group cursor-pointer">
           <div className="relative">
             <img 
-              src={Image} 
-              className="h-10 w-10 rounded-full border-2 border-indigo-400 object-cover object-[50%_15%] group-hover:scale-105 transition-transform duration-300 shadow-[0_0_12px_rgba(129,140,248,0.3)]" 
+              src="/logo.png"
+              className="h-11 w-11 rounded-full border-2 border-orange-500 object-cover group-hover:scale-105 transition-transform duration-300 shadow-[0_0_12px_rgba(249,115,22,0.35)]" 
               alt="Rohit Tiwari, Full Stack Developer"
             />
-            <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-indigo-500 ring-2 ring-[#0b0b0d]"></span>
+            <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-orange-500 ring-2 ring-[#121212]"></span>
           </div>
           <div>
-            <h1 className="font-extrabold text-xl tracking-wide text-gray-100 group-hover:text-indigo-400 transition-colors">
-              Rohit <span className="text-indigo-400">Tiwari</span>
+            <h1 className="font-extrabold text-xl tracking-wide text-gray-100 group-hover:text-orange-500 transition-colors">
+              Rohit <span className="text-orange-500">Tiwari</span>
             </h1>
-            <p className="text-[10px] uppercase tracking-wider text-indigo-400 font-mono -mt-1 select-none">
+            <p className="text-[10px] uppercase tracking-wider text-orange-500 font-mono -mt-1 select-none">
               Full Stack Developer
             </p>
           </div>
@@ -47,7 +46,7 @@ function Navbar() {
               <li key={item.id}>
                 <Link
                   to={item.link}
-                  className="text-gray-300 hover:text-indigo-400 transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-indigo-400"
+                  className="text-gray-300 hover:text-orange-500 transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-orange-500/40"
                 >
                   {item.text}
                 </Link>
@@ -59,7 +58,7 @@ function Navbar() {
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
             download="Rohit_Kumar_Tiwari_Resume.pdf"
-            className="flex items-center space-x-2 px-4 py-2 text-xs font-bold uppercase tracking-wider bg-indigo-500 hover:bg-indigo-400 text-white rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(99,102,241,0.4)]"
+            className="flex items-center space-x-2 px-4 py-2 text-xs font-bold uppercase tracking-wider bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.35)]"
           >
             <FaDownload className="text-sm" />
             <span>Resume PDF</span>
@@ -71,14 +70,14 @@ function Navbar() {
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
             download="Rohit_Kumar_Tiwari_Resume.pdf"
-            className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider bg-indigo-500 text-white rounded-md shadow-md flex items-center space-x-1"
+            className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider bg-orange-500 text-white rounded-md shadow-md flex items-center space-x-1"
           >
             <FaDownload />
             <span>PDF</span>
           </a>
           <button 
             onClick={() => setMenu(!menu)} 
-            className="text-gray-200 hover:text-indigo-400 p-1 focus:outline-none"
+            className="text-gray-200 hover:text-orange-500 p-1 focus:outline-none"
             aria-label="Toggle Navigation"
           >
             {menu ? <IoCloseSharp size={26} /> : <AiOutlineMenu size={26} />}
@@ -88,14 +87,14 @@ function Navbar() {
 
       {/* Mobile Drawer */}
       {menu && (
-        <div className="md:hidden bg-[#111317]/95 backdrop-blur-xl border-b border-gray-800 px-6 py-6 space-y-4 text-center animate-fadeIn">
+        <div className="md:hidden bg-[#161616]/95 backdrop-blur-xl border-b border-[#2a2a2d] px-6 py-6 space-y-4 text-center animate-fadeIn">
           <ul className="flex flex-col space-y-4">
             {navItems.map((item) => (
               <li key={item.id}>
                 <Link
                   to={item.link}
                   onClick={() => setMenu(false)}
-                  className="text-gray-200 hover:text-indigo-400 font-semibold text-base transition-colors"
+                  className="text-gray-200 hover:text-orange-500 font-semibold text-base transition-colors"
                 >
                   {item.text}
                 </Link>
@@ -107,7 +106,7 @@ function Navbar() {
               href="/Rohit_Kumar_Tiwari_Resume.pdf"
               download="Rohit_Kumar_Tiwari_Resume.pdf"
               onClick={() => setMenu(false)}
-              className="inline-flex items-center space-x-2 px-5 py-2 text-xs font-bold uppercase tracking-wider bg-indigo-500 text-white rounded-lg shadow-lg"
+              className="inline-flex items-center space-x-2 px-5 py-2 text-xs font-bold uppercase tracking-wider bg-orange-500 text-white rounded-lg shadow-lg"
             >
               <FaDownload />
               <span>Download Resume</span>

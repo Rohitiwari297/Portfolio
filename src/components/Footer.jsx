@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="w-full bg-[#090a0c] border-t border-gray-800/80 text-gray-400 py-6 px-4 md:px-16">
+    <footer className="w-full bg-[#161616] border-t border-[#2a2a2d] text-gray-400 py-6 px-4 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         
         {/* Left: Name / Copyright */}
@@ -22,7 +22,7 @@ function Footer() {
             href="https://github.com/Rohitiwari297"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-indigo-400 transition duration-300"
+            className="hover:text-orange-500 transition duration-300"
             title="GitHub"
           >
             <FaGithub />
@@ -31,14 +31,14 @@ function Footer() {
             href="https://www.linkedin.com/in/rohit-kumar-tiwari-9996ba237/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-indigo-400 transition duration-300"
+            className="hover:text-orange-500 transition duration-300"
             title="LinkedIn"
           >
             <FaLinkedin />
           </a>
           <a
             href="mailto:tripathirohit297@gmail.com"
-            className="hover:text-indigo-400 transition duration-300"
+            className="hover:text-orange-500 transition duration-300"
             title="Email"
           >
             <FaEnvelope />
@@ -46,7 +46,7 @@ function Footer() {
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
             download="Rohit_Kumar_Tiwari_Resume.pdf"
-            className="flex items-center space-x-1.5 px-3 py-1.5 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/30 text-indigo-400 text-xs font-mono font-semibold rounded-md transition duration-300"
+            className="flex items-center space-x-1.5 px-3 py-1.5 bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/40 text-orange-500 text-xs font-mono font-semibold rounded-md transition duration-300"
             title="Download Resume"
           >
             <FaDownload />
