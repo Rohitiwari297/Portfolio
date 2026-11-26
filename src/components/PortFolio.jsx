@@ -89,12 +89,12 @@ function PortFolio() {
         
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-mono uppercase tracking-wider">
             <FaFolderOpen />
             <span>Featured Work & GitHub Repos</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-100 tracking-tight">
-            Production Projects & <span className="text-emerald-400">Open Source</span>
+            Production Projects & <span className="text-indigo-400">Open Source</span>
           </h1>
           <p className="text-gray-400 text-sm sm:text-base">
             Live applications and source code across e-commerce, ERP, travel, learning and matrimonial products, built with Node.js, React, TypeScript, Redis and Nginx.
@@ -108,14 +108,14 @@ function PortFolio() {
               key={project.id}
               className={`relative bg-[#14161d] border rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group hover:-translate-y-1.5 ${
                 project.featured 
-                  ? "border-emerald-500/40 shadow-[0_0_20px_rgba(16,185,129,0.1)] hover:shadow-emerald-500/20" 
+                  ? "border-indigo-500/40 shadow-[0_0_20px_rgba(99,102,241,0.1)] hover:shadow-indigo-500/20" 
                   : "border-gray-800 hover:border-gray-700"
               }`}
             >
               {/* Header Badges */}
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[11px] font-mono font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                  <span className="text-[11px] font-mono font-semibold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
                     {project.featured ? "Featured Project" : "GitHub Repository"}
                   </span>
                   <div className="flex space-x-3 text-gray-400">
@@ -124,7 +124,7 @@ function PortFolio() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="hover:text-emerald-400 transition-colors text-lg"
+                        className="hover:text-indigo-400 transition-colors text-lg"
                         title="View GitHub Repository"
                       >
                         <FaGithub />
@@ -145,10 +145,10 @@ function PortFolio() {
                 </div>
 
                 {/* Title & Subtitle */}
-                <h2 className="text-xl font-bold text-gray-100 group-hover:text-emerald-400 transition-colors mb-1">
+                <h2 className="text-xl font-bold text-gray-100 group-hover:text-indigo-400 transition-colors mb-1">
                   {project.title}
                 </h2>
-                <p className="text-xs text-emerald-400/80 font-mono mb-3">{project.subtitle}</p>
+                <p className="text-xs text-indigo-400/80 font-mono mb-3">{project.subtitle}</p>
 
                 {/* Description */}
                 <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-6">
@@ -175,7 +175,7 @@ function PortFolio() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex-1 py-2 px-3 text-center text-xs font-bold uppercase tracking-wider bg-emerald-500 hover:bg-emerald-400 text-gray-950 rounded-lg transition-all shadow-md"
+                      className="flex-1 py-2 px-3 text-center text-xs font-bold uppercase tracking-wider bg-indigo-500 hover:bg-indigo-400 text-white rounded-lg transition-all shadow-md"
                     >
                       Live Demo
                     </a>
@@ -197,7 +197,7 @@ function PortFolio() {
         </div>
 
         {/* GitHub Repos Banner */}
-        <div className="bg-gradient-to-r from-[#141720] via-[#1a1e29] to-[#141720] border border-emerald-500/30 rounded-2xl p-8 text-center space-y-4 shadow-xl">
+        <div className="bg-gradient-to-r from-[#141720] via-[#1a1e29] to-[#141720] border border-indigo-500/30 rounded-2xl p-8 text-center space-y-4 shadow-xl">
           <h3 className="text-2xl font-bold text-gray-100">Want to explore all my open-source projects?</h3>
           <p className="text-gray-400 text-sm max-w-xl mx-auto">
             Visit my official GitHub profile to inspect active repositories, REST API backends, and full-stack implementations.
@@ -206,7 +206,7 @@ function PortFolio() {
             href="https://github.com/Rohitiwari297?tab=repositories"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center space-x-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow-lg"
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-400 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow-lg"
           >
             <FaGithub className="text-base" />
             <span>Browse Rohitiwari297 on GitHub</span>

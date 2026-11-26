@@ -25,16 +25,16 @@ function Navbar() {
           <div className="relative">
             <img 
               src={Image} 
-              className="h-10 w-10 rounded-full border-2 border-emerald-400 object-cover object-[50%_15%] group-hover:scale-105 transition-transform duration-300 shadow-[0_0_12px_rgba(52,211,153,0.3)]" 
+              className="h-10 w-10 rounded-full border-2 border-indigo-400 object-cover object-[50%_15%] group-hover:scale-105 transition-transform duration-300 shadow-[0_0_12px_rgba(129,140,248,0.3)]" 
               alt="Rohit Tiwari, Full Stack Developer"
             />
-            <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-emerald-500 ring-2 ring-[#0b0b0d]"></span>
+            <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-indigo-500 ring-2 ring-[#0b0b0d]"></span>
           </div>
           <div>
-            <h1 className="font-extrabold text-xl tracking-wide text-gray-100 group-hover:text-emerald-400 transition-colors">
-              Rohit <span className="text-emerald-400">Tiwari</span>
+            <h1 className="font-extrabold text-xl tracking-wide text-gray-100 group-hover:text-indigo-400 transition-colors">
+              Rohit <span className="text-indigo-400">Tiwari</span>
             </h1>
-            <p className="text-[10px] uppercase tracking-wider text-emerald-400 font-mono -mt-1 select-none">
+            <p className="text-[10px] uppercase tracking-wider text-indigo-400 font-mono -mt-1 select-none">
               Full Stack Developer
             </p>
           </div>
@@ -47,7 +47,7 @@ function Navbar() {
               <li key={item.id}>
                 <Link
                   to={item.link}
-                  className="text-gray-300 hover:text-emerald-400 transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-emerald-400"
+                  className="text-gray-300 hover:text-indigo-400 transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-indigo-400"
                 >
                   {item.text}
                 </Link>
@@ -59,7 +59,7 @@ function Navbar() {
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
             download="Rohit_Kumar_Tiwari_Resume.pdf"
-            className="flex items-center space-x-2 px-4 py-2 text-xs font-bold uppercase tracking-wider bg-emerald-500 hover:bg-emerald-400 text-gray-950 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(16,185,129,0.4)]"
+            className="flex items-center space-x-2 px-4 py-2 text-xs font-bold uppercase tracking-wider bg-indigo-500 hover:bg-indigo-400 text-white rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(99,102,241,0.4)]"
           >
             <FaDownload className="text-sm" />
             <span>Resume PDF</span>
@@ -71,14 +71,14 @@ function Navbar() {
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
             download="Rohit_Kumar_Tiwari_Resume.pdf"
-            className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider bg-emerald-500 text-gray-950 rounded-md shadow-md flex items-center space-x-1"
+            className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider bg-indigo-500 text-white rounded-md shadow-md flex items-center space-x-1"
           >
             <FaDownload />
             <span>PDF</span>
           </a>
           <button 
             onClick={() => setMenu(!menu)} 
-            className="text-gray-200 hover:text-emerald-400 p-1 focus:outline-none"
+            className="text-gray-200 hover:text-indigo-400 p-1 focus:outline-none"
             aria-label="Toggle Navigation"
           >
             {menu ? <IoCloseSharp size={26} /> : <AiOutlineMenu size={26} />}
@@ -95,7 +95,7 @@ function Navbar() {
                 <Link
                   to={item.link}
                   onClick={() => setMenu(false)}
-                  className="text-gray-200 hover:text-emerald-400 font-semibold text-base transition-colors"
+                  className="text-gray-200 hover:text-indigo-400 font-semibold text-base transition-colors"
                 >
                   {item.text}
                 </Link>
@@ -107,7 +107,7 @@ function Navbar() {
               href="/Rohit_Kumar_Tiwari_Resume.pdf"
               download="Rohit_Kumar_Tiwari_Resume.pdf"
               onClick={() => setMenu(false)}
-              className="inline-flex items-center space-x-2 px-5 py-2 text-xs font-bold uppercase tracking-wider bg-emerald-500 text-gray-950 rounded-lg shadow-lg"
+              className="inline-flex items-center space-x-2 px-5 py-2 text-xs font-bold uppercase tracking-wider bg-indigo-500 text-white rounded-lg shadow-lg"
             >
               <FaDownload />
               <span>Download Resume</span>

@@ -22,7 +22,7 @@ function Footer() {
             href="https://github.com/Rohitiwari297"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-emerald-400 transition duration-300"
+            className="hover:text-indigo-400 transition duration-300"
             title="GitHub"
           >
             <FaGithub />
@@ -31,14 +31,14 @@ function Footer() {
             href="https://www.linkedin.com/in/rohit-kumar-tiwari-9996ba237/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-emerald-400 transition duration-300"
+            className="hover:text-indigo-400 transition duration-300"
             title="LinkedIn"
           >
             <FaLinkedin />
           </a>
           <a
             href="mailto:tripathirohit297@gmail.com"
-            className="hover:text-emerald-400 transition duration-300"
+            className="hover:text-indigo-400 transition duration-300"
             title="Email"
           >
             <FaEnvelope />
@@ -46,7 +46,7 @@ function Footer() {
           <a
             href="/Rohit_Kumar_Tiwari_Resume.pdf"
             download="Rohit_Kumar_Tiwari_Resume.pdf"
-            className="flex items-center space-x-1.5 px-3 py-1.5 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-semibold rounded-md transition duration-300"
+            className="flex items-center space-x-1.5 px-3 py-1.5 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/30 text-indigo-400 text-xs font-mono font-semibold rounded-md transition duration-300"
             title="Download Resume"
           >
             <FaDownload />

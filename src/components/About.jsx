@@ -17,7 +17,7 @@ function About() {
         
         {/* Header */}
         <div className="text-center space-y-3">
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-emerald-400 tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-indigo-400 tracking-tight">
             About Me
           </h1>
           <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
@@ -29,42 +29,42 @@ function About() {
         <div className="space-y-8">
           
           {/* Who I Am */}
-          <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg hover:border-emerald-500/40 transition">
-            <div className="flex items-center space-x-3 text-emerald-400 mb-4">
+          <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg hover:border-indigo-500/40 transition">
+            <div className="flex items-center space-x-3 text-indigo-400 mb-4">
               <FaUserCheck className="text-2xl" />
               <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Engineering Profile</h2>
             </div>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Hello, I’m <span className="text-emerald-300 font-bold">Rohit Kumar Tiwari</span>, a Full Stack Developer with ~2 years of experience (including an internship) building production web applications with <span className="text-emerald-400 font-medium">React.js, Next.js, Node.js, Express.js, TypeScript and MongoDB</span>. I enjoy backend work: secure REST APIs, role-based access, caching with <span className="text-emerald-400 font-medium">Redis</span>, and deployments behind <span className="text-emerald-400 font-medium">Nginx</span> on <span className="text-emerald-400 font-medium">AWS EC2, Linux VPS and cPanel</span>. I also use <span className="text-emerald-400 font-medium">AI tools (ChatGPT, Claude)</span> to refactor, debug and ship faster.
+              Hello, I’m <span className="text-indigo-300 font-bold">Rohit Kumar Tiwari</span>, a Full Stack Developer with ~2 years of experience (including an internship) building production web applications with <span className="text-indigo-400 font-medium">React.js, Next.js, Node.js, Express.js, TypeScript and MongoDB</span>. I enjoy backend work: secure REST APIs, role-based access, caching with <span className="text-indigo-400 font-medium">Redis</span>, and deployments behind <span className="text-indigo-400 font-medium">Nginx</span> on <span className="text-indigo-400 font-medium">AWS EC2, Linux VPS and cPanel</span>. I also use <span className="text-indigo-400 font-medium">AI tools (ChatGPT, Claude)</span> to refactor, debug and ship faster.
             </p>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs sm:text-sm">
               <div className="p-3 rounded-xl bg-[#12141a] border border-gray-800">
-                <p className="text-emerald-400 font-bold">Secure APIs</p>
+                <p className="text-indigo-400 font-bold">Secure APIs</p>
                 <p className="text-gray-400 mt-1">RBAC, OTP login, HTTP-only JWT cookies, rate limiting</p>
               </div>
               <div className="p-3 rounded-xl bg-[#12141a] border border-gray-800">
-                <p className="text-emerald-400 font-bold">Performance</p>
+                <p className="text-indigo-400 font-bold">Performance</p>
                 <p className="text-gray-400 mt-1">Redis caching and Nginx reverse proxy / load balancing</p>
               </div>
               <div className="p-3 rounded-xl bg-[#12141a] border border-gray-800">
-                <p className="text-emerald-400 font-bold">Deployment</p>
+                <p className="text-indigo-400 font-bold">Deployment</p>
                 <p className="text-gray-400 mt-1">AWS EC2, Linux VPS, PM2, cPanel hosting</p>
               </div>
             </div>
           </div>
 
           {/* Professional Experience */}
-          <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg hover:border-emerald-500/40 transition space-y-6">
-            <div className="flex items-center space-x-3 text-emerald-400">
+          <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg hover:border-indigo-500/40 transition space-y-6">
+            <div className="flex items-center space-x-3 text-indigo-400">
               <FaBriefcase className="text-2xl" />
               <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Work Experience</h2>
             </div>
 
             {/* Experience 1 */}
-            <div className="border-l-2 border-emerald-500/60 pl-4 space-y-2">
+            <div className="border-l-2 border-indigo-500/60 pl-4 space-y-2">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                 <h3 className="text-lg font-bold text-gray-100">Junior Full Stack Developer</h3>
-                <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/30 w-fit">
+                <span className="text-xs font-mono text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded border border-indigo-500/30 w-fit">
                   Apr 2025 – Present
                 </span>
               </div>
@@ -79,10 +79,10 @@ function About() {
             </div>
 
             {/* Experience 2 */}
-            <div className="border-l-2 border-teal-500/60 pl-4 space-y-2 pt-2">
+            <div className="border-l-2 border-cyan-500/60 pl-4 space-y-2 pt-2">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                 <h3 className="text-lg font-bold text-gray-100">React.js Developer Intern</h3>
-                <span className="text-xs font-mono text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded border border-teal-500/30 w-fit">
+                <span className="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded border border-cyan-500/30 w-fit">
                   Oct 2024 – Mar 2025
                 </span>
               </div>
@@ -99,7 +99,7 @@ function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Education */}
             <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 shadow-lg space-y-3">
-              <div className="flex items-center space-x-3 text-emerald-400">
+              <div className="flex items-center space-x-3 text-indigo-400">
                 <FaGraduationCap className="text-2xl" />
                 <h2 className="text-lg font-bold text-gray-100">Education</h2>
               </div>
@@ -110,21 +110,21 @@ function About() {
 
             {/* Certifications */}
             <div className="bg-[#14161d] border border-gray-800 rounded-2xl p-6 shadow-lg space-y-3">
-              <div className="flex items-center space-x-3 text-emerald-400">
+              <div className="flex items-center space-x-3 text-indigo-400">
                 <FaAward className="text-2xl" />
                 <h2 className="text-lg font-bold text-gray-100">Certifications</h2>
               </div>
               <ul className="text-xs sm:text-sm text-gray-300 space-y-2 font-medium">
                 <li className="flex items-center space-x-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span className="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
                   <span>Full-Stack Web Development Bootcamp – Physics Wallah</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span className="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
                   <span>JavaScript Essentials – Physics Wallah</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span className="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
                   <span>React.js Basics – Physics Wallah</span>
                 </li>
               </ul>
@@ -133,16 +133,16 @@ function About() {
 
           {/* GitHub Live Card */}
           {githubData && (
-            <div className="bg-gradient-to-r from-[#141720] via-[#1a1e29] to-[#141720] border border-emerald-500/30 rounded-2xl p-6 sm:p-8 shadow-xl">
+            <div className="bg-gradient-to-r from-[#141720] via-[#1a1e29] to-[#141720] border border-indigo-500/30 rounded-2xl p-6 sm:p-8 shadow-xl">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-bold text-emerald-400 flex items-center space-x-2">
+                <h2 className="text-xl font-bold text-indigo-400 flex items-center space-x-2">
                   <FaGithub />
                   <span>GitHub Profile Activity</span>
                 </h2>
                 <a
                   href="/Rohit_Kumar_Tiwari_Resume.pdf"
                   download="Rohit_Kumar_Tiwari_Resume.pdf"
-                  className="inline-flex items-center space-x-2 px-3 py-1.5 bg-emerald-500 text-gray-950 font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-emerald-400 transition"
+                  className="inline-flex items-center space-x-2 px-3 py-1.5 bg-indigo-500 text-white font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-indigo-400 transition"
                 >
                   <FaDownload />
                   <span>Download Resume</span>
@@ -152,15 +152,15 @@ function About() {
                 <img
                   src={githubData.avatar_url}
                   alt="GitHub Avatar"
-                  className="w-24 h-24 rounded-full border-2 border-emerald-400 shadow-md"
+                  className="w-24 h-24 rounded-full border-2 border-indigo-400 shadow-md"
                 />
                 <div className="space-y-2 text-center sm:text-left">
                   <h3 className="text-lg font-bold text-gray-100">{githubData.name} (@{githubData.login})</h3>
                   <p className="text-xs sm:text-sm text-gray-300">{githubData.bio || "Full Stack Web Developer & Software Engineer"}</p>
                   <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-xs font-mono text-gray-400 pt-1">
-                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Public Repos: <strong className="text-emerald-400">{githubData.public_repos}</strong></span>
-                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Followers: <strong className="text-emerald-400">{githubData.followers}</strong></span>
-                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Following: <strong className="text-emerald-400">{githubData.following}</strong></span>
+                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Public Repos: <strong className="text-indigo-400">{githubData.public_repos}</strong></span>
+                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Followers: <strong className="text-indigo-400">{githubData.followers}</strong></span>
+                    <span className="px-2.5 py-1 bg-[#12141a] rounded border border-gray-800">Following: <strong className="text-indigo-400">{githubData.following}</strong></span>
                   </div>
                 </div>
               </div>

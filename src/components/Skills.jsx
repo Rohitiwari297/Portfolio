@@ -32,7 +32,7 @@ function Skills() {
     { id: 6, name: "AWS EC2 & Linux VPS Hosting", category: "Backend & DevOps", icon: <FaAws size={28} className="text-amber-500" />, tag: "Working", usedIn: "Grocery platform and Wedlock, with Nginx and PM2" },
     { id: 7, name: "AI Tools (ChatGPT, Claude)", category: "Backend & DevOps", icon: <FaRobot size={28} className="text-purple-400" />, tag: "Daily use", usedIn: "Refactoring, debugging and faster delivery" },
     { id: 8, name: "Redis Caching & Rate Limiting", category: "Backend & DevOps", icon: <SiRedis size={28} className="text-red-500" />, tag: "Working", usedIn: "Grocery platform, ERP, Wedlock" },
-    { id: 9, name: "Nginx Reverse Proxy", category: "Backend & DevOps", icon: <SiNginx size={28} className="text-emerald-400" />, tag: "Working", usedIn: "Reverse proxy and load balancing on EC2 / VPS" },
+    { id: 9, name: "Nginx Reverse Proxy", category: "Backend & DevOps", icon: <SiNginx size={28} className="text-indigo-400" />, tag: "Working", usedIn: "Reverse proxy and load balancing on EC2 / VPS" },
     { id: 10, name: "MongoDB & Mongoose", category: "Databases", icon: <SiMongodb size={28} className="text-green-400" />, tag: "Daily use", usedIn: "Schema design across all projects" },
     { id: 11, name: "MySQL / SQL", category: "Databases", icon: <SiMysql size={28} className="text-blue-400" />, tag: "Familiar", usedIn: "Relational database fundamentals" },
     { id: 12, name: "Tailwind CSS", category: "Frontend", icon: <SiTailwindcss size={28} className="text-sky-400" />, tag: "Daily use", usedIn: "LMS and this portfolio" },
@@ -49,12 +49,12 @@ function Skills() {
         
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-mono uppercase tracking-wider">
             <FaCode />
             <span>Technical Capabilities</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-100 tracking-tight">
-            Skills & <span className="text-emerald-400">Tech Stack</span>
+            Skills & <span className="text-indigo-400">Tech Stack</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             The tools I use to build, secure, speed up and deploy web applications, and where I have used them.
@@ -68,7 +68,7 @@ function Skills() {
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
                   filter === cat
-                    ? "bg-emerald-500 text-gray-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]"
+                    ? "bg-indigo-500 text-white shadow-[0_0_15px_rgba(99,102,241,0.4)]"
                     : "bg-[#16181e] text-gray-400 hover:text-gray-200 border border-gray-800"
                 }`}
               >
@@ -83,13 +83,13 @@ function Skills() {
           {filteredSkills.map(({ id, name, icon, tag, usedIn }) => (
             <div
               key={id}
-              className="relative bg-[#14161c] border border-gray-800/80 p-6 rounded-2xl shadow-lg hover:border-emerald-500/50 hover:shadow-emerald-500/10 transition duration-300 group"
+              className="relative bg-[#14161c] border border-gray-800/80 p-6 rounded-2xl shadow-lg hover:border-indigo-500/50 hover:shadow-indigo-500/10 transition duration-300 group"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="p-3 bg-[#1c1f26] rounded-xl border border-gray-700/50 group-hover:scale-110 transition-transform duration-300">
                   {icon}
                 </div>
-                <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                   {tag}
                 </span>
               </div>
@@ -97,7 +97,7 @@ function Skills() {
               <h3 className="text-lg font-bold text-gray-100 mb-2">{name}</h3>
 
               <p className="text-xs text-gray-400 leading-relaxed">
-                <span className="text-emerald-400 font-mono">Used in: </span>
+                <span className="text-indigo-400 font-mono">Used in: </span>
                 {usedIn}
               </p>
             </div>
